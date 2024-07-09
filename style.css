@@ -9,5 +9,26 @@
     display: block;
     margin: 2rem auto;
     position: relative;
-    width: 100%;
+    width: 80%;
   }
+
+  input[type="text"]{
+    border: none;
+    color: #007491;
+    border-bottom: 1px solid #aaa;
+    display: block;
+    height: 2rem;
+    margin: 0 0 2rem;
+    padding: .25rem;
+    width: 100%;
+    transition: 0.3s height ease;
+
+    &:focus{
+        animation: focus .3s 1;
+        border-bottom: 1px solid #007491;
+        height: 4rem;
+        outline: none;
+    }
+  }
+
+  
