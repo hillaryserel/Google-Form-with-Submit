@@ -14,7 +14,7 @@
   
   input[type=text] {
     border: none;
-    color: #007491;
+    color: #232425;
     border-bottom: 1px solid #aaa;
     display: block;
     margin: 0 0 2rem;
@@ -31,7 +31,7 @@
   textarea {
     border: none;
     border-bottom: 1px solid #aaa;
-    color: #007491;
+    color: #232425;
     display: block;
     height: 2rem;
     margin: 0 0 2rem;
@@ -53,8 +53,7 @@
     margin: 0 1rem 1rem;
     
     input[type=checkbox] {
-      appearance: none;
-      border: 1px solid #aaa;
+      border: 50% solid #aaa;
       height: 14px;
       margin-right: 10px;
       width: 14px;
@@ -65,7 +64,7 @@
       
       &:focus {
         animation: focus .3s 1;
-        border: 1px solid #007491;
+        border: 1px solid #0f1010;
         outline: none;
       }
       
