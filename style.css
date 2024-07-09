@@ -3,32 +3,131 @@
     font-family: 'Cabin', sans-serif;
     text-rendering: geometricPrecision;
   }
-
-  form{
+  
+  form {
     color: #444;
     display: block;
     margin: 2rem auto;
     position: relative;
     width: 80%;
   }
-
-  input[type="text"]{
+  
+  input[type=text] {
     border: none;
     color: #007491;
     border-bottom: 1px solid #aaa;
+    display: block;
+    margin: 0 0 2rem;
+    padding: .25rem;
+    width: 100%;
+    
+    &:focus {
+      animation: focus .3s 1;
+      border-bottom: 1px solid #007491;
+      outline: none;
+    }
+  }
+  
+  textarea {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    color: #007491;
     display: block;
     height: 2rem;
     margin: 0 0 2rem;
     padding: .25rem;
     width: 100%;
     transition: 0.3s height ease;
-
-    &:focus{
-        animation: focus .3s 1;
-        border-bottom: 1px solid #007491;
-        height: 4rem;
-        outline: none;
+    
+    &:focus {
+      animation: focus .3s 1;
+      border-bottom: 1px solid #007491;
+      height: 4rem;
+      outline: none;
     }
   }
-
   
+  label {
+    display: block;
+    line-height: 14px;
+    margin: 0 1rem 1rem;
+    
+    input[type=checkbox] {
+      appearance: none;
+      border: 1px solid #aaa;
+      height: 14px;
+      margin-right: 10px;
+      width: 14px;
+      
+      &:hover {
+        cursor: pointer;
+      }
+      
+      &:focus {
+        animation: focus .3s 1;
+        border: 1px solid #007491;
+        outline: none;
+      }
+      
+      &:checked {
+        background: #007491;
+      }
+    }
+  }
+  
+  .other {
+    margin-bottom: 2rem;
+    
+    input[type=text] {
+      display: inline-block;
+      margin: 0 0 0 10px;
+      width: 70%;
+    }
+  }
+  
+  .copy {
+    margin-bottom: 2rem;
+    margin-left: 0;
+  }
+  
+  #submit {
+    background: transparent;
+    border: 1px solid #aaa;
+    padding: 10px 20px;
+    transition: .3s all ease;
+    
+    &:hover {
+      text-shadow: 0 1px #999;
+    }
+    
+    &:focus {
+      animation: focus .3s 1;
+      border: 1px solid #007491;
+      outline: none;
+    }
+  }
+  
+  @keyframes focus {
+    0% {
+      background: rgba(0, 116, 145, 0);
+    }
+    50% {
+      background: rgba(0, 116, 145, 0.25);
+    }
+    100% {
+      background: rgba(0, 116, 145, 0);
+    }
+  }
+  
+  ::-webkit-input-placeholder {
+     color: #444;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     color: #444; 
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: #444; 
+  }
+  :-ms-input-placeholder {  
+     color: #444;
+  }
