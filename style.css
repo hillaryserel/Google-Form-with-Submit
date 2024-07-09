@@ -1,3 +1,7 @@
+body{
+    background-color: #f1f0f0;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
@@ -5,7 +9,7 @@
   }
   
   form {
-    color: #444;
+    color: #656060;
     display: block;
     margin: 2rem auto;
     position: relative;
@@ -69,7 +73,7 @@
       }
       
       &:checked {
-        background: #007491;
+        background: #232425;
       }
     }
   }
